@@ -1,4 +1,8 @@
 {
 	"name": "noVNC Debian",
-	"repository": "https://github.com/0x77dev/docker-novnc"
+	"description": "using Docker",
+	"repository": "https://github.com/0x77dev/docker-novnc",
+	"logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Nginx_logo.svg",
+	"keywords": ["hero", "docker", "proxy"],
+	"stack": "container"
 }
