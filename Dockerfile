@@ -26,6 +26,12 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
+
+RUN adduser ubuntu
+RUN echo "ubuntu:ubuntu" | chpasswd && \
+    adduser ubuntu sudo && \
+    sudo usermod -a -G sudo ubuntu
+    
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
 CMD ["/app/entrypoint.sh"]
