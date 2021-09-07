@@ -14,6 +14,9 @@ RUN set -ex; \
       supervisor \
       x11vnc \
       xterm \
+      curl \
+      sudo \
+      vim \
       xvfb
 
 # Setup demo environment variables
