@@ -1,4 +1,5 @@
-FROM debian:stretch
+FROM debian:11.0
+#stretch
 
 # Install git, supervisor, VNC, & X11 packages
 RUN set -ex; \
